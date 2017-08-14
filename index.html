@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="branchApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Branch Tracker</title>
+  </head>
+  <body>
+    <h1>This is the Branch Tracker.</h1>
+    <h3>It keeps track of all information regarding branches at a sample company.</h3>
+    <h3>It can be modified to track additions, changes, and deletions for anything.</h3>
+
+    <div class="mainBody">
+      <ui-view></ui-view>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="app.js"></script>
+    <script src="components/branches/branchesCtl.js"></script>
+  </body>
+</html>
