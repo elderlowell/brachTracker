@@ -10,6 +10,11 @@ angular
         url: '/branches',
         templateUrl: 'components/branches/branchesTpl.html',
         controller: 'branchesCtl'
+      })
+      .state('branch', {
+        url: '/branch/:id',
+        templateUrl: 'components/branch/branchTpl.html',
+        controller: 'branchCtl'
       });
 
   });
