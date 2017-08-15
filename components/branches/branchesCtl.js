@@ -9,4 +9,8 @@ angular.module('branchApp').controller('branchesCtl', function($scope, branchesS
 
   $scope.getBranchList();
 
+  $scope.sortOrder = function(heading) {
+    $scope.activeHeader = heading;
+  }
+
 })

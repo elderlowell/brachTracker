@@ -5,17 +5,21 @@
   left: 0;
   width: 100vw;
   height: 60px;
-  background: #0277BD;
+  background: rgb(27,171,185);
   z-index: 99;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .navbar-logo-wrapper {
-  flex: .5;
+  flex: .25;
+  /*background-image: url('../media/academy_a.png');*/
+  background-image: url('../media/logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .navbar-menu-wrapper {
-  flex: .5;
+  flex: .75;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -24,14 +28,15 @@
 .navbar-menu-item {
   display: flex;
   padding: 5px 20px;
-  font-size: 1.25em;
+  font-size: 18px;
   color: white;
   height: 60px;
   align-items: center;
   transition: all .35s;
+  cursor: pointer;
 }
 
 .navbar-menu-item:hover {
-  background: #01579B;
+  background: rgb(64,131,139);
   transition: all .35s;
 }

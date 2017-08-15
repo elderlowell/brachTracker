@@ -28,6 +28,7 @@ th {
   margin: 5px;
   min-width: 15vw;
   max-width: 15vw;
+  cursor: pointer;
 }
 
 th>input {
@@ -35,12 +36,12 @@ th>input {
   font-size: 16px;
   min-width: 15vw;
   max-width: 15vw;
-  padding: 3px;
+  padding: 7px;
 }
 
 td {
   height: 30px;
-  padding: 0 3px;
+  padding: 0 8px;
   margin: 0;
   border-color: none;
   min-width: 15vw;
@@ -49,6 +50,7 @@ td {
 }
 
 tbody>tr:hover {
-  background: #0277BD;
+  background: rgb(27,171,185);
   color: white;
+  cursor: pointer;
 }
