@@ -19,7 +19,9 @@
   "homepage": "https://github.com/elderlowell/branchTracker#readme",
   "dependencies": {
     "angular": "^1.6.5",
+    "angular-animate": "^1.6.5",
     "angular-ui-router": "^1.0.3",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "ng-animate": "^0.2.0"
   }
 }

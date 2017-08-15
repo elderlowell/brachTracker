@@ -1,0 +1,37 @@
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 60px;
+  background: #0277BD;
+  z-index: 99;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.navbar-logo-wrapper {
+  flex: .5;
+}
+
+.navbar-menu-wrapper {
+  flex: .5;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar-menu-item {
+  display: flex;
+  padding: 5px 20px;
+  font-size: 1.25em;
+  color: white;
+  height: 60px;
+  align-items: center;
+  transition: all .35s;
+}
+
+.navbar-menu-item:hover {
+  background: #01579B;
+  transition: all .35s;
+}

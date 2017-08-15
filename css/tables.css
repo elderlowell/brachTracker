@@ -1,0 +1,54 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tbody, thead {
+  display: block;
+}
+
+thead {
+  position: fixed;
+  top: 60px;
+  z-index: 2;
+  background: white;
+  width: 80vw;
+  padding: 10px 0 2px 0;
+}
+
+tbody {
+  position: relative;
+  top: 70px;
+  width: 80vw;
+}
+
+th {
+  height: 30px;
+  padding: 0;
+  margin: 5px;
+  min-width: 15vw;
+  max-width: 15vw;
+}
+
+th>input {
+  height: 30px;
+  font-size: 16px;
+  min-width: 15vw;
+  max-width: 15vw;
+  padding: 3px;
+}
+
+td {
+  height: 30px;
+  padding: 0 3px;
+  margin: 0;
+  border-color: none;
+  min-width: 15vw;
+  max-width: 15vw;
+  overflow: hidden;
+}
+
+tbody>tr:hover {
+  background: #0277BD;
+  color: white;
+}

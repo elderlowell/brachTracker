@@ -1,25 +1,29 @@
 <div class="">
   <table>
-    <tr>
-      <th>Branch Name</th>
-      <th>Branch Code</th>
-      <th>NMLS ID</th>
-      <th>State</th>
-      <th>Branch Manager</th>
-    </tr>
-    <tr>
-      <th><input type="text" ng-model="search.name" placeholder="type branch name..." /></th>
-      <th><input type="text" ng-model="search.code" placeholder="type branch code..." /></th>
-      <th><input type="text" ng-model="search.nmls" placeholder="type branch nmls id..." /></th>
-      <th><input type="text" ng-model="search.state" placeholder="type branch state..." /></th>
-      <th><input type="text" ng-model="search.manager" placeholder="type branch manager name..." /></th>
-    </tr>
-    <tr ui-sref="branch({id: '{{branch.code}}'})" ng-repeat="branch in branchList | filter: search | orderBy: activeHeader">
-      <td>{{branch.name}}</td>
-      <td>{{branch.code}}</td>
-      <td>{{branch.nmls}}</td>
-      <td>{{branch.state}}</td>
-      <td>{{branch.manager}}</td>
-    </tr>
+    <thead>
+      <tr>
+        <th>Branch Name</th>
+        <th>Branch Code</th>
+        <th>NMLS ID</th>
+        <th>State</th>
+        <th>Branch Manager</th>
+      </tr>
+      <tr>
+        <th><input type="text" ng-model="search.name" placeholder="filter" /></th>
+        <th><input type="text" ng-model="search.code" placeholder="filter" /></th>
+        <th><input type="text" ng-model="search.nmls" placeholder="filter" /></th>
+        <th><input type="text" ng-model="search.state" placeholder="filter" /></th>
+        <th><input type="text" ng-model="search.manager" placeholder="filter" /></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ui-sref="branch({id: '{{branch.code}}'})" ng-repeat="branch in branchList | filter: search | orderBy: activeHeader">
+        <td>{{branch.name}}</td>
+        <td>{{branch.code}}</td>
+        <td>{{branch.nmls}}</td>
+        <td>{{branch.state}}</td>
+        <td>{{branch.manager}}</td>
+      </tr>
+    </tbody>
   </table>
 </div>

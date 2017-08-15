@@ -1,11 +1,15 @@
 angular
-  .module('branchApp', ['ui.router'])
+  .module('branchApp', ['ui.router', 'ngAnimate'])
   .config(function($urlRouterProvider, $stateProvider) {
 
     $urlRouterProvider
       .otherwise('/');
 
     $stateProvider
+      .state('home', {
+        url: '/home',
+        templateUrl: 'components/dashboard/dashboardTpl.html'
+      })
       .state('branches', {
         url: '/branches',
         templateUrl: 'components/branches/branchesTpl.html',
