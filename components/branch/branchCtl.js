@@ -5,7 +5,6 @@ angular.module('branchApp').controller('branchCtl', function($scope, $stateParam
       .then(function(res) {
         $scope.branchInfo = res;
       });
-
   }
 
   $scope.getBranchInfo($stateParams.id);

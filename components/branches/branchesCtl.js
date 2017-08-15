@@ -1,7 +1,10 @@
 angular.module('branchApp').controller('branchesCtl', function($scope, branchesSvc) {
 
   $scope.getBranchList = function() {
-    $scope.branchList = branchesSvc.getBranchList();
+    branchesSvc.getBranchList()
+      .then(function(res) {
+        $scope.branchList = res;
+      });
   }
 
   $scope.getBranchList();
