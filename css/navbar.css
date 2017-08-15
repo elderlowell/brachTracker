@@ -7,15 +7,14 @@
   height: 60px;
   background: rgb(27,171,185);
   z-index: 99;
+  background-image: url('../media/logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .navbar-logo-wrapper {
   flex: .25;
-  /*background-image: url('../media/academy_a.png');*/
-  background-image: url('../media/logo.png');
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .navbar-menu-wrapper {

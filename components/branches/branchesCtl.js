@@ -4,13 +4,26 @@ angular.module('branchApp').controller('branchesCtl', function($scope, branchesS
     branchesSvc.getBranchList()
       .then(function(res) {
         $scope.branchList = res;
+        $scope.activeHeader = 'name';
+        $scope.sortDirection = '+';
       });
-  }
+  };
 
   $scope.getBranchList();
 
   $scope.sortOrder = function(heading) {
-    $scope.activeHeader = heading;
-  }
+    if ($scope.activeHeader === heading) {
+      if ($scope.sortDirection === '+') {
+        $scope.sortDirection = '-';
+      }
+      else {
+        $scope.sortDirection = '+';
+      }
+    }
+    else {
+      $scope.activeHeader = heading;
+      $scope.sortDirection = '+';
+    }
+  };
 
 })
