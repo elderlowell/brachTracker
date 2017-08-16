@@ -1,402 +1,674 @@
 [
   {
-    "date": "2016-04-26T18:09:16Z",
-    "name": "Montgomery",
-    "code": 1,
+    "filingId": 1000001,
+    "filingDate": "2012-01-01T00:00:01-0700",
     "nmls": 1111101,
+    "fha": 1111111101,
+    "code": 1,
+    "name": "Montgomery",
+    "licenses": [{
+      "regulator": "Alabama",
+      "name": "Consumer Credit License",
+      "number": "11111.001",
+      "status": "approved",
+      "licenseDate": "2012-01-01T00:00:01-0700",
+      "terminationDate": ""
+    }],
+    "address": "1234 Firestone Drive",
+    "suite": "Suite 400",
+    "city": "Bagdad",
+    "county": "Hyawatha",
     "state": "AL",
-    "manager": "Hank Aaron"
+    "zip": "36867",
+    "manager": "Hank Aaron",
+    "licenseManager": "Hank Aaron",
+    "phone": 9998887771,
+    "fax": 9998887772,
+    "structure": "branch",
+    "region": "Southeast",
+    "openDate": "2013-01-01T00:00:01-0700",
+    "closeDateOnboarding": "",
+    "closeDateLicensing": "",
+    "chargeBranch": ""
   }
   ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Juneau",
-    "code": 2,
+    "filingId": 1000002,
+    "filingDate": "2013-01-01T00:00:01-0700",
+    "nmls": 1111101,
+    "fha": 1111111101,
+    "code": 1,
+    "name": "Montgomery",
+    "licenses": [{
+      "regulator": "Alabama",
+      "name": "Consumer Credit License",
+      "number": "11111.001",
+      "status": "approved",
+      "licenseDate": "2012-01-01T00:00:01-0700",
+      "terminationDate": ""
+    }],
+    "address": "1234 Firestone Drive",
+    "suite": "Suite 400",
+    "city": "Bagdad",
+    "county": "Hyawatha",
+    "state": "AL",
+    "zip": "36867",
+    "manager": "Hank Aaron",
+    "licenseManager": "Hank Aaron",
+    "phone": 9998887771,
+    "fax": 9998887772,
+    "structure": "branch",
+    "region": "Southeast",
+    "openDate": "2013-01-01T00:00:01-0700",
+    "closeDateOnboarding": "",
+    "closeDateLicensing": "",
+    "chargeBranch": ""
+  }
+  ,{
+    "filingId": 1000003,
+    "filingDate": "2014-01-01T00:00:01-0700",
+    "nmls": 1111101,
+    "fha": 1111111101,
+    "code": 1,
+    "name": "Montgomery",
+    "licenses": [{
+      "regulator": "Alabama",
+      "name": "Consumer Credit License",
+      "number": "11111.001",
+      "status": "terminated",
+      "licenseDate": "2012-01-01T00:00:01-0700",
+      "terminationDate": "2014-01-01T00:00:01-0700"
+    }],
+    "address": "1234 Firestone Drive",
+    "suite": "Suite 400",
+    "city": "Bagdad",
+    "county": "Hyawatha",
+    "state": "AL",
+    "zip": "36867",
+    "manager": "Hank Aaron",
+    "licenseManager": "Hank Aaron",
+    "phone": 9998887771,
+    "fax": 9998887772,
+    "structure": "branch",
+    "region": "Southeast",
+    "openDate": "2013-01-01T00:00:01-0700",
+    "closeDateOnboarding": "2014-01-01T00:00:01-0700",
+    "closeDateLicensing": "2014-01-02T00:00:01-0700",
+    "chargeBranch": ""
+  }
+  ,{
+    "filingId": 1000004,
+    "filingDate": "2012-02-01T00:00:01-0700",
     "nmls": 1111102,
+    "fha": 1111111102,
+    "code": 2,
+    "name": "Juneau",
+    "licenses": [{
+      "regulator": "Alaska",
+      "name": "Mortgage Broker/Lender Branch Registration",
+      "number": "AK1000001",
+      "status": "approved",
+      "licenseDate": "2012-02-01T00:00:01-0700",
+      "terminationDate": ""
+    }],
+    "address": "1234 Firestone Drive",
+    "suite": "Suite 300",
+    "city": "Juneau",
+    "county": "Hyawatha",
     "state": "AK",
-    "manager": "Virgil Partch"
+    "zip": "99503",
+    "manager": "Virgil Partch",
+    "licenseManager": "Virgil Partch",
+    "phone": 9998887771,
+    "fax": 9998887772,
+    "structure": "branch",
+    "region": "Northwest",
+    "openDate": "2012-02-01T00:00:01-0700",
+    "closeDateOnboarding": "",
+    "closeDateLicensing": "",
+    "chargeBranch": ""
   }
   ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Phoenix",
-    "code": 3,
+    "filingId": 1000005,
+    "filingDate": "2013-02-01T00:00:01-0700",
+    "nmls": 1111102,
+    "fha": 1111111102,
+    "code": 2,
+    "name": "Juneau",
+    "licenses": [{
+      "regulator": "Alaska",
+      "name": "Mortgage Broker/Lender Branch Registration",
+      "number": "AK1000001",
+      "status": "approved",
+      "licenseDate": "2012-01-01T00:00:01-0700",
+      "terminationDate": ""
+    }],
+    "address": "1234 Firestone Drive",
+    "suite": "Suite 300",
+    "city": "Juneau",
+    "county": "Hyawatha",
+    "state": "AK",
+    "zip": "99503",
+    "manager": "Virgil Partch",
+    "licenseManager": "Virgil Partch",
+    "phone": 9998887771,
+    "fax": 9998887772,
+    "structure": "branch",
+    "region": "Southeast",
+    "openDate": "2012-02-01T00:00:01-0700",
+    "closeDateOnboarding": "",
+    "closeDateLicensing": "",
+    "chargeBranch": ""
+  }
+  ,{
+    "filingId": 1000006,
+    "filingDate": "2014-02-01T00:00:01-0700",
+    "nmls": 1111102,
+    "fha": 1111111102,
+    "code": 2,
+    "name": "Juneau",
+    "licenses": [{
+      "regulator": "Alaska",
+      "name": "Mortgage Broker/Lender Branch Registration",
+      "number": "AK1000001",
+      "status": "terminated",
+      "licenseDate": "2012-02-01T00:00:01-0700",
+      "terminationDate": "2014-02-01T00:00:01-0700"
+    }],
+    "address": "1234 Firestone Drive",
+    "suite": "Suite 300",
+    "city": "Juneau",
+    "county": "Hyawatha",
+    "state": "AK",
+    "zip": "99503",
+    "manager": "Virgil Partch",
+    "licenseManager": "Virgil Partch",
+    "phone": 9998887771,
+    "fax": 9998887772,
+    "structure": "branch",
+    "region": "Southeast",
+    "openDate": "2012-02-01T00:00:01-0700",
+    "closeDateOnboarding": "2014-02-01T00:00:01-0700",
+    "closeDateLicensing": "2014-02-02T00:00:01-0700",
+    "chargeBranch": ""
+  }
+  ,{
+    "filingId": 1000007,
+    "filingDate": "2012-03-01T00:00:01-0700",
     "nmls": 1111103,
+    "fha": 1111111103,
+    "code": 3,
+    "name": "Phoenix",
+    "licenses": [{
+      "regulator": "Arizona",
+      "name": "Mortgage Banker Branch License",
+      "number": "1000002",
+      "status": "approved",
+      "licenseDate": "2012-03-01T00:00:01-0700",
+      "terminationDate": ""
+    }],
+    "address": "1234 Firestone Drive",
+    "suite": "Suite 200",
+    "city": "Phoenix",
+    "county": "Apache",
     "state": "AZ",
-    "manager": "Barry Goldwater"
+    "zip": "85119",
+    "manager": "Barry Goldwater",
+    "licenseManager": "Barry Goldwater",
+    "phone": 9998887771,
+    "fax": 9998887772,
+    "structure": "branch",
+    "region": "Southwest",
+    "openDate": "2012-03-01T00:00:01-0700",
+    "closeDateOnboarding": "",
+    "closeDateLicensing": "",
+    "chargeBranch": ""
   }
   ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Little Rock",
-    "code": 4,
+    "filingId": 1000008,
+    "filingDate": "2013-03-01T00:00:01-0700",
+    "nmls": 1111103,
+    "fha": 1111111103,
+    "code": 3,
+    "name": "Phoenix",
+    "licenses": [{
+      "regulator": "Arizona",
+      "name": "Mortgage Banker Branch License",
+      "number": "1000002",
+      "status": "approved",
+      "licenseDate": "2012-03-01T00:00:01-0700",
+      "terminationDate": ""
+    }],
+    "address": "1234 Firestone Drive",
+    "suite": "Suite 200",
+    "city": "Phoenix",
+    "county": "Apache",
+    "state": "AZ",
+    "zip": "85119",
+    "manager": "Barry Goldwater",
+    "licenseManager": "Barry Goldwater",
+    "phone": 9998887771,
+    "fax": 9998887772,
+    "structure": "branch",
+    "region": "Southwest",
+    "openDate": "2012-03-01T00:00:01-0700",
+    "closeDateOnboarding": "",
+    "closeDateLicensing": "",
+    "chargeBranch": ""
+  }
+  ,{
+    "filingId": 1000009,
+    "filingDate": "2014-03-01T00:00:01-0700",
+    "nmls": 1111103,
+    "fha": 1111111103,
+    "code": 3,
+    "name": "Phoenix",
+    "licenses": [{
+      "regulator": "Arizona",
+      "name": "Mortgage Banker Branch License",
+      "number": "1000002",
+      "status": "terminated",
+      "licenseDate": "2012-03-01T00:00:01-0700",
+      "terminationDate": "2014-03-01T00:00:01-0700"
+    }],
+    "address": "1234 Firestone Drive",
+    "suite": "Suite 200",
+    "city": "Phoenix",
+    "county": "Apache",
+    "state": "AZ",
+    "zip": "85119",
+    "manager": "Barry Goldwater",
+    "licenseManager": "Barry Goldwater",
+    "phone": 9998887771,
+    "fax": 9998887772,
+    "structure": "branch",
+    "region": "Southwest",
+    "openDate": "2012-03-01T00:00:01-0700",
+    "closeDateOnboarding": "2014-03-01T00:00:01-0700",
+    "closeDateLicensing": "2014-03-02T00:00:01-0700",
+    "chargeBranch": ""
+  }
+  ,{
+    "filingId": 1000010,
+    "filingDate": "2012-03-01T00:00:01-0700",
     "nmls": 1111104,
+    "fha": 1111111104,
+    "code": 4,
+    "name": "Little Rock",
+    "licenses": [{
+      "regulator": "Arkansas",
+      "name": "Mortgage Banker Branch License",
+      "number": "1000003",
+      "status": "approved",
+      "licenseDate": "2012-03-01T00:00:01-0700",
+      "terminationDate": ""
+    }],
+    "address": "1234 Firestone Drive",
+    "suite": "Suite 100",
+    "city": "Little Rock",
+    "county": "Clinton",
     "state": "AR",
-    "manager": "Bill Clinton"
+    "zip": "72002",
+    "manager": "Bill Clinton",
+    "licenseManager": "Bill Clinton",
+    "phone": 9998887771,
+    "fax": 9998887772,
+    "structure": "branch",
+    "region": "Southeast",
+    "openDate": "2012-03-01T00:00:01-0700",
+    "closeDateOnboarding": "",
+    "closeDateLicensing": "",
+    "chargeBranch": ""
   }
   ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Sacramento",
-    "code": 5,
+    "filingId": 1000011,
+    "filingDate": "2013-03-01T00:00:01-0700",
+    "nmls": 1111104,
+    "fha": 1111111104,
+    "code": 4,
+    "name": "Little Rock",
+    "licenses": [{
+      "regulator": "Arkansas",
+      "name": "Mortgage Banker Branch License",
+      "number": "1000003",
+      "status": "approved",
+      "licenseDate": "2012-03-01T00:00:01-0700",
+      "terminationDate": ""
+    }],
+    "address": "1234 Firestone Drive",
+    "suite": "Suite 100",
+    "city": "Little Rock",
+    "county": "Clinton",
+    "state": "AR",
+    "zip": "72002",
+    "manager": "Bill Clinton",
+    "licenseManager": "Bill Clinton",
+    "phone": 9998887771,
+    "fax": 9998887772,
+    "structure": "branch",
+    "region": "Southeast",
+    "openDate": "2012-03-01T00:00:01-0700",
+    "closeDateOnboarding": "",
+    "closeDateLicensing": "",
+    "chargeBranch": ""
+  }
+  ,{
+    "filingId": 1000012,
+    "filingDate": "2014-03-01T00:00:01-0700",
+    "nmls": 1111104,
+    "fha": 1111111104,
+    "code": 4,
+    "name": "Little Rock",
+    "licenses": [{
+      "regulator": "Arkansas",
+      "name": "Mortgage Banker Branch License",
+      "number": "1000003",
+      "status": "terminated",
+      "licenseDate": "2012-03-01T00:00:01-0700",
+      "terminationDate": "2014-03-01T00:00:01-0700"
+    }],
+    "address": "1234 Firestone Drive",
+    "suite": "Suite 100",
+    "city": "Little Rock",
+    "county": "Clinton",
+    "state": "AR",
+    "zip": "72002",
+    "manager": "Bill Clinton",
+    "licenseManager": "Bill Clinton",
+    "phone": 9998887771,
+    "fax": 9998887772,
+    "structure": "branch",
+    "region": "Southeast",
+    "openDate": "2012-03-01T00:00:01-0700",
+    "closeDateOnboarding": "2014-03-01T00:00:01-0700",
+    "closeDateLicensing": "2014-03-02T00:00:01-0700",
+    "chargeBranch": ""
+  }
+  ,{
+    "filingId": 1000013,
+    "filingDate": "2012-03-01T00:00:01-0700",
     "nmls": 1111105,
+    "fha": 1111111105,
+    "code": 5,
+    "name": "Sacramento",
+    "licenses": [{
+      "regulator": "California",
+      "name": "Mortgage Banker Branch License",
+      "number": "1000005",
+      "status": "approved",
+      "licenseDate": "2012-03-01T00:00:01-0700",
+      "terminationDate": ""
+    }],
+    "address": "1234 Firestone Drive",
+    "suite": "Suite 100",
+    "city": "Sacramento",
+    "county": "Wine",
     "state": "CA",
-    "manager": "Richard Nixon"
+    "zip": "94203",
+    "manager": "Richard Nixon",
+    "licenseManager": "Richard Nixon",
+    "phone": 9998887771,
+    "fax": 9998887772,
+    "structure": "branch",
+    "region": "CalNeva North",
+    "openDate": "2012-03-01T00:00:01-0700",
+    "closeDateOnboarding": "",
+    "closeDateLicensing": "",
+    "chargeBranch": ""
   }
   ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Denver",
-    "code": 6,
+    "filingId": 1000014,
+    "filingDate": "2013-03-01T00:00:01-0700",
+    "nmls": 1111105,
+    "fha": 1111111105,
+    "code": 5,
+    "name": "Sacramento",
+    "licenses": [{
+      "regulator": "California",
+      "name": "Mortgage Banker Branch License",
+      "number": "1000005",
+      "status": "approved",
+      "licenseDate": "2012-03-01T00:00:01-0700",
+      "terminationDate": ""
+    }],
+    "address": "1234 Firestone Drive",
+    "suite": "Suite 100",
+    "city": "Sacramento",
+    "county": "Wine",
+    "state": "CA",
+    "zip": "94203",
+    "manager": "Richard Nixon",
+    "licenseManager": "Richard Nixon",
+    "phone": 9998887771,
+    "fax": 9998887772,
+    "structure": "branch",
+    "region": "CalNeva North",
+    "openDate": "2012-03-01T00:00:01-0700",
+    "closeDateOnboarding": "",
+    "closeDateLicensing": "",
+    "chargeBranch": ""
+  }
+  ,{
+    "filingId": 1000015,
+    "filingDate": "2014-03-01T00:00:01-0700",
+    "nmls": 1111105,
+    "fha": 1111111105,
+    "code": 5,
+    "name": "Sacramento",
+    "licenses": [{
+      "regulator": "California",
+      "name": "Mortgage Banker Branch License",
+      "number": "1000005",
+      "status": "approved",
+      "licenseDate": "2012-03-01T00:00:01-0700",
+      "terminationDate": ""
+    }],
+    "address": "1234 Firestone Drive",
+    "suite": "Suite 100",
+    "city": "Sacramento",
+    "county": "Wine",
+    "state": "CA",
+    "zip": "94203",
+    "manager": "Richard Nixon",
+    "licenseManager": "Richard Nixon",
+    "phone": 9998887771,
+    "fax": 9998887772,
+    "structure": "branch",
+    "region": "CalNeva North",
+    "openDate": "2012-03-01T00:00:01-0700",
+    "closeDateOnboarding": "",
+    "closeDateLicensing": "",
+    "chargeBranch": ""
+  }
+  ,{
+    "filingId": 1000016,
+    "filingDate": "2012-03-01T00:00:01-0700",
     "nmls": 1111106,
+    "fha": 1111111106,
+    "code": 6,
+    "name": "Denver",
+    "licenses": [{
+      "regulator": "Colorado",
+      "name": "Mortgage Banker Branch License",
+      "number": "1000006",
+      "status": "approved",
+      "licenseDate": "2012-03-01T00:00:01-0700",
+      "terminationDate": ""
+    }],
+    "address": "1234 Firestone Drive",
+    "suite": "Suite 99",
+    "city": "Denver",
+    "county": "Grand",
     "state": "CO",
-    "manager": "Tim Allen"
+    "zip": "80920",
+    "manager": "Tim Allen",
+    "licenseManager": "Tim Allen",
+    "phone": 9998887771,
+    "fax": 9998887772,
+    "structure": "branch",
+    "region": "Colorado",
+    "openDate": "2012-03-01T00:00:01-0700",
+    "closeDateOnboarding": "",
+    "closeDateLicensing": "",
+    "chargeBranch": ""
   }
   ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Hartford",
-    "code": 7,
+    "filingId": 1000017,
+    "filingDate": "2013-03-01T00:00:01-0700",
+    "nmls": 1111106,
+    "fha": 1111111106,
+    "code": 6,
+    "name": "Denver",
+    "licenses": [{
+      "regulator": "Colorado",
+      "name": "Mortgage Banker Branch License",
+      "number": "1000006",
+      "status": "approved",
+      "licenseDate": "2012-03-01T00:00:01-0700",
+      "terminationDate": ""
+    }],
+    "address": "1234 Firestone Drive",
+    "suite": "Suite 99",
+    "city": "Denver",
+    "county": "Grand",
+    "state": "CO",
+    "zip": "80920",
+    "manager": "Tim Allen",
+    "licenseManager": "Tim Allen",
+    "phone": 9998887771,
+    "fax": 9998887772,
+    "structure": "branch",
+    "region": "Colorado",
+    "openDate": "2012-03-01T00:00:01-0700",
+    "closeDateOnboarding": "",
+    "closeDateLicensing": "",
+    "chargeBranch": ""
+  }
+  ,{
+    "filingId": 1000018,
+    "filingDate": "2014-03-01T00:00:01-0700",
+    "nmls": 1111106,
+    "fha": 1111111106,
+    "code": 6,
+    "name": "Denver",
+    "licenses": [{
+      "regulator": "Colorado",
+      "name": "Mortgage Banker Branch License",
+      "number": "1000006",
+      "status": "terminated",
+      "licenseDate": "2012-03-01T00:00:01-0700",
+      "terminationDate": "2014-03-01T00:00:01-0700"
+    }],
+    "address": "1234 Firestone Drive",
+    "suite": "Suite 99",
+    "city": "Denver",
+    "county": "Grand",
+    "state": "CO",
+    "zip": "80920",
+    "manager": "Tim Allen",
+    "licenseManager": "Tim Allen",
+    "phone": 9998887771,
+    "fax": 9998887772,
+    "structure": "branch",
+    "region": "Colorado",
+    "openDate": "2012-03-01T00:00:01-0700",
+    "closeDateOnboarding": "2014-03-01T00:00:01-0700",
+    "closeDateLicensing": "2014-03-02T00:00:01-0700",
+    "chargeBranch": ""
+  }
+  ,{
+    "filingId": 1000019,
+    "filingDate": "2012-03-01T00:00:01-0700",
     "nmls": 1111107,
+    "fha": 1111111107,
+    "code": 7,
+    "name": "Hartford",
+    "licenses": [{
+      "regulator": "Connecticut",
+      "name": "Mortgage Banker Branch License",
+      "number": "1000007",
+      "status": "approved",
+      "licenseDate": "2012-03-01T00:00:01-0700",
+      "terminationDate": ""
+    }],
+    "address": "1234 Firestone Drive",
+    "suite": "Suite 98",
+    "city": "Hartford",
+    "county": "Lobster",
     "state": "CT",
-    "manager": "Benedict Arnold"
+    "zip": "06101",
+    "manager": "Benedict Arnold",
+    "licenseManager": "Benedict Arnold",
+    "phone": 9998887771,
+    "fax": 9998887772,
+    "structure": "branch",
+    "region": "Northeast",
+    "openDate": "2012-03-01T00:00:01-0700",
+    "closeDateOnboarding": "",
+    "closeDateLicensing": "",
+    "chargeBranch": ""
   }
   ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Dover",
-    "code": 8,
-    "nmls": 1111108,
-    "state": "DE",
-    "manager": "Valerie Bertinelli"
+    "filingId": 1000020,
+    "filingDate": "2013-03-01T00:00:01-0700",
+    "nmls": 1111107,
+    "fha": 1111111107,
+    "code": 7,
+    "name": "Hartford",
+    "licenses": [{
+      "regulator": "Connecticut",
+      "name": "Mortgage Banker Branch License",
+      "number": "1000007",
+      "status": "approved",
+      "licenseDate": "2012-03-01T00:00:01-0700",
+      "terminationDate": ""
+    }],
+    "address": "1234 Firestone Drive",
+    "suite": "Suite 98",
+    "city": "Hartford",
+    "county": "Lobster",
+    "state": "CT",
+    "zip": "06101",
+    "manager": "Benedict Arnold",
+    "licenseManager": "Benedict Arnold",
+    "phone": 9998887771,
+    "fax": 9998887772,
+    "structure": "branch",
+    "region": "Northeast",
+    "openDate": "2012-03-01T00:00:01-0700",
+    "closeDateOnboarding": "",
+    "closeDateLicensing": "",
+    "chargeBranch": ""
   }
   ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Tallahassee",
-    "code": 9,
-    "nmls": 1111109,
-    "state": "FL",
-    "manager": "Steve Carlton"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Atlanta",
-    "code": 10,
-    "nmls": 1111110,
-    "state": "GA",
-    "manager": "Gladys Knight"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Honolulu",
-    "code": 11,
-    "nmls": 1111111,
-    "state": "HI",
-    "manager": "Tia Carrere"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Boise",
-    "code": 12,
-    "nmls": 1111112,
-    "state": "ID",
-    "manager": "Frank Church"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Springfield",
-    "code": 13,
-    "nmls": 1111113,
-    "state": "IL",
-    "manager": "Ronald Reagan"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Indianapolis",
-    "code": 14,
-    "nmls": 1111114,
-    "state": "IN",
-    "manager": "James Dean"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Des Moines",
-    "code": 15,
-    "nmls": 1111115,
-    "state": "IA",
-    "manager": "Johnny Carson"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Topeka",
-    "code": 16,
-    "nmls": 1111116,
-    "state": "KS",
-    "manager": "Stan Kenton"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Frankfort",
-    "code": 17,
-    "nmls": 1111117,
-    "state": "KY",
-    "manager": "Muhammad Ali"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Baton Rouge",
-    "code": 18,
-    "nmls": 1111118,
-    "state": "LA",
-    "manager": "Louis Armstrong"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Augusta",
-    "code": 19,
-    "nmls": 1111119,
-    "state": "ME",
-    "manager": "Stephen King"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Annapolis",
-    "code": 20,
-    "nmls": 1111120,
-    "state": "MD",
-    "manager": "Benjamin Banneker"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Boston",
-    "code": 21,
-    "nmls": 1111121,
-    "state": "MA",
-    "manager": "Emily Dickinson"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Lansing",
-    "code": 22,
-    "nmls": 1111122,
-    "state": "MI",
-    "manager": "Earvin Johnson"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "St. Paul",
-    "code": 23,
-    "nmls": 1111123,
-    "state": "MN",
-    "manager": "Bob Dylan"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Jackson",
-    "code": 24,
-    "nmls": 1111124,
-    "state": "MS",
-    "manager": "Jim Hensen"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Jefferson City",
-    "code": 25,
-    "nmls": 1111125,
-    "state": "MO",
-    "manager": "Yogi Berra"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Helena",
-    "code": 26,
-    "nmls": 1111126,
-    "state": "MT",
-    "manager": "Cary Cooper"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Lincoln",
-    "code": 27,
-    "nmls": 1111127,
-    "state": "NE",
-    "manager": "Marlon Brando"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Carson City",
-    "code": 28,
-    "nmls": 1111128,
-    "state": "NV",
-    "manager": "Harry Reid"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Concord",
-    "code": 29,
-    "nmls": 1111129,
-    "state": "NH",
-    "manager": "John Irving"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Trenton",
-    "code": 30,
-    "nmls": 1111130,
-    "state": "NJ",
-    "manager": "Jon Bon Jovi"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Santa Fe",
-    "code": 31,
-    "nmls": 1111131,
-    "state": "NM",
-    "manager": "John Denver"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Albany",
-    "code": 32,
-    "nmls": 1111132,
-    "state": "NY",
-    "manager": "Lucille Ball"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Raleigh",
-    "code": 33,
-    "nmls": 1111133,
-    "state": "NC",
-    "manager": "Billy Graham"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Bismark",
-    "code": 34,
-    "nmls": 1111134,
-    "state": "ND",
-    "manager": "Phil Jackson"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Columbus",
-    "code": 35,
-    "nmls": 1111135,
-    "state": "OH",
-    "manager": "Neil Armstrong"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Oklahoma City",
-    "code": 36,
-    "nmls": 1111136,
-    "state": "OK",
-    "manager": "Vince Gill"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Salem",
-    "code": 37,
-    "nmls": 1111137,
-    "state": "OR",
-    "manager": "Sally Struthers"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Harrisburg",
-    "code": 38,
-    "nmls": 1111138,
-    "state": "PA",
-    "manager": "Louisa May Alcott"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Providence",
-    "code": 39,
-    "nmls": 1111139,
-    "state": "RI",
-    "manager": "Bobby Hackett"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Columbia",
-    "code": 40,
-    "nmls": 1111140,
-    "state": "SC",
-    "manager": "John C. Calhoun"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Pierre",
-    "code": 41,
-    "nmls": 1111141,
-    "state": "SD",
-    "manager": "Tom Brokaw"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Nashville",
-    "code": 42,
-    "nmls": 1111142,
-    "state": "TN",
-    "manager": "Aretha Franklin"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Austin",
-    "code": 43,
-    "nmls": 1111143,
-    "state": "TX",
-    "manager": "Carol Burnett"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Salt Lake City",
-    "code": 44,
-    "nmls": 1111144,
-    "state": "UT",
-    "manager": "Butch Cassidy"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Montpelier",
-    "code": 45,
-    "nmls": 1111145,
-    "state": "VT",
-    "manager": "Calvin Coolidge"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Richmond",
-    "code": 46,
-    "nmls": 1111146,
-    "state": "VA",
-    "manager": "Arthur Ashe"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Olympia",
-    "code": 47,
-    "nmls": 1111147,
-    "state": "WA",
-    "manager": "Bill Gates"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Charleston",
-    "code": 48,
-    "nmls": 1111148,
-    "state": "WV",
-    "manager": "Don Knotts"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Madison",
-    "code": 49,
-    "nmls": 1111149,
-    "state": "WI",
-    "manager": "Harry Houdini"
-  }
-  ,{
-    "date": "2016-05-26T18:09:16Z",
-    "name": "Cheyenne",
-    "code": 50,
-    "nmls": 1111150,
-    "state": "WY",
-    "manager": "Jim Bridger"
+    "filingId": 1000021,
+    "filingDate": "2014-03-01T00:00:01-0700",
+    "nmls": 1111107,
+    "fha": 1111111107,
+    "code": 7,
+    "name": "Hartford",
+    "licenses": [{
+      "regulator": "Connecticut",
+      "name": "Mortgage Banker Branch License",
+      "number": "1000007",
+      "status": "approved",
+      "licenseDate": "2012-03-01T00:00:01-0700",
+      "terminationDate": ""
+    }],
+    "address": "1234 Firestone Drive",
+    "suite": "Suite 98",
+    "city": "Hartford",
+    "county": "Lobster",
+    "state": "CT",
+    "zip": "06101",
+    "manager": "Benedict Arnold",
+    "licenseManager": "Benedict Arnold",
+    "phone": 9998887771,
+    "fax": 9998887772,
+    "structure": "branch",
+    "region": "Northeast",
+    "openDate": "2012-03-01T00:00:01-0700",
+    "closeDateOnboarding": "",
+    "closeDateLicensing": "",
+    "chargeBranch": ""
   }
 ]

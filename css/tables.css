@@ -1,13 +1,8 @@
-table {
-  border-collapse: collapse;
+.table {
   width: 100%;
 }
 
-tbody, thead {
-  display: block;
-}
-
-thead {
+.tableHeader {
   position: fixed;
   top: 60px;
   z-index: 2;
@@ -16,22 +11,30 @@ thead {
   padding: 10px 0 2px 0;
 }
 
-tbody {
+
+.tableBody {
   position: relative;
-  top: 70px;
-  width: 80vw;
+  top: 75px;
 }
 
-th {
-  height: 30px;
-  padding: 0;
+.tableRow {
+  display: flex;
+  width: 100%;
+}
+
+.tableRowElement {
+  display: flex;
+  flex: .2;
   margin: 5px;
-  min-width: 15vw;
-  max-width: 15vw;
+}
+
+.tableHeader .tableRowElement {
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 
-th>input {
+.tableRowElement input {
   height: 30px;
   font-size: 16px;
   min-width: 15vw;
@@ -39,17 +42,12 @@ th>input {
   padding: 7px;
 }
 
-td {
-  height: 30px;
-  padding: 0 8px;
-  margin: 0;
-  border-color: none;
-  min-width: 15vw;
-  max-width: 15vw;
+.tableBody .tableRowElement {
   overflow: hidden;
+  padding-left: 8px;
 }
 
-tbody>tr:hover {
+.tableBody .tableRow:hover {
   background: rgb(27,171,185);
   color: white;
   cursor: pointer;
@@ -57,4 +55,21 @@ tbody>tr:hover {
 
 i {
   vertical-align: middle;
+}
+
+.moreInfo {
+  height: 100px;
+  width: 100%;
+  opacity: 1;
+  /*transition: all 1s;*/
+}
+
+.moreInfo.ng-hide-add, .moreInfo.ng-hide-remove {
+  transition: all 1s;
+}
+
+.moreInfo.ng-hide {
+  height: 0;
+  opacity: 0;
+  /*transition: all 1s;*/
 }

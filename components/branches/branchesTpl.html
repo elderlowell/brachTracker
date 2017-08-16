@@ -1,54 +1,65 @@
-<div class="">
-  <table>
-    <thead>
-      <tr>
-        <th ng-click="sortOrder('name')">Branch Name
-          <span ng-if="activeHeader === 'name'">
-            <span ng-if="sortDirection === '+'"><i class="material-icons">arrow_drop_up</i></span>
-            <span ng-if="sortDirection === '-'"><i class="material-icons">arrow_drop_down</i></span>
-          </span>
-        </th>
-        <th ng-click="sortOrder('state')">State
-          <span ng-if="activeHeader === 'state'">
-            <span ng-if="sortDirection === '+'"><i class="material-icons">arrow_drop_up</i></span>
-            <span ng-if="sortDirection === '-'"><i class="material-icons">arrow_drop_down</i></span>
-          </span>
-        </th>
-        <th ng-click="sortOrder('code')">Branch Code
-          <span ng-if="activeHeader === 'code'">
-            <span ng-if="sortDirection === '+'"><i class="material-icons">arrow_drop_up</i></span>
-            <span ng-if="sortDirection === '-'"><i class="material-icons">arrow_drop_down</i></span>
-          </span>
-        </th>
-        <th ng-click="sortOrder('nmls')">NMLS ID
-          <span ng-if="activeHeader === 'nmls'">
-            <span ng-if="sortDirection === '+'"><i class="material-icons">arrow_drop_up</i></span>
-            <span ng-if="sortDirection === '-'"><i class="material-icons">arrow_drop_down</i></span>
-          </span>
-        </th>
-        <th ng-click="sortOrder('manager')">Branch Manager
-          <span ng-if="activeHeader === 'manager'">
-            <span ng-if="sortDirection === '+'"><i class="material-icons">arrow_drop_up</i></span>
-            <span ng-if="sortDirection === '-'"><i class="material-icons">arrow_drop_down</i></span>
-          </span>
-        </th>
-      </tr>
-      <tr>
-        <th><input type="text" ng-model="search.name" placeholder="filter" /></th>
-        <th><input type="text" ng-model="search.state" placeholder="filter" /></th>
-        <th><input type="text" ng-model="search.code" placeholder="filter" /></th>
-        <th><input type="text" ng-model="search.nmls" placeholder="filter" /></th>
-        <th><input type="text" ng-model="search.manager" placeholder="filter" /></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr ui-sref="branch({id: '{{branch.code}}'})" ng-repeat="branch in branchList | filter: search | orderBy: activeHeader | orderBy: sortDirection">
-        <td>{{branch.name}}</td>
-        <td>{{branch.state}}</td>
-        <td>{{branch.code}}</td>
-        <td>{{branch.nmls}}</td>
-        <td>{{branch.manager}}</td>
-      </tr>
-    </tbody>
-  </table>
+<div class="table">
+  <div class="tableHeader">
+    <div class="tableRow">
+      <div class="tableRowElement" ng-click="sortOrder('name')">Branch Name
+        <span ng-if="activeHeader === 'name'">
+          <span ng-if="sortDirection === '+'"><i class="material-icons">arrow_drop_up</i></span>
+          <span ng-if="sortDirection === '-'"><i class="material-icons">arrow_drop_down</i></span>
+        </span>
+      </div>
+      <div class="tableRowElement" ng-click="sortOrder('state')">State
+        <span ng-if="activeHeader === 'state'">
+          <span ng-if="sortDirection === '+'"><i class="material-icons">arrow_drop_up</i></span>
+          <span ng-if="sortDirection === '-'"><i class="material-icons">arrow_drop_down</i></span>
+        </span>
+      </div>
+      <div class="tableRowElement" ng-click="sortOrder('code')">Branch Code
+        <span ng-if="activeHeader === 'code'">
+          <span ng-if="sortDirection === '+'"><i class="material-icons">arrow_drop_up</i></span>
+          <span ng-if="sortDirection === '-'"><i class="material-icons">arrow_drop_down</i></span>
+        </span>
+      </div>
+      <div class="tableRowElement" ng-click="sortOrder('nmls')">NMLS ID
+        <span ng-if="activeHeader === 'nmls'">
+          <span ng-if="sortDirection === '+'"><i class="material-icons">arrow_drop_up</i></span>
+          <span ng-if="sortDirection === '-'"><i class="material-icons">arrow_drop_down</i></span>
+        </span>
+      </div>
+      <div class="tableRowElement" ng-click="sortOrder('manager')">Branch Manager
+        <span ng-if="activeHeader === 'manager'">
+          <span ng-if="sortDirection === '+'"><i class="material-icons">arrow_drop_up</i></span>
+          <span ng-if="sortDirection === '-'"><i class="material-icons">arrow_drop_down</i></span>
+        </span>
+      </div>
+    </div>
+    <div class="tableRow">
+      <div class="tableRowElement">
+          <input type="text" ng-model="search.name" placeholder="filter" />
+      </div>
+      <div class="tableRowElement">
+        <input type="text" ng-model="search.state" placeholder="filter" />
+      </div>
+      <div class="tableRowElement">
+        <input type="text" ng-model="search.code" placeholder="filter" />
+      </div>
+      <div class="tableRowElement">
+        <input type="text" ng-model="search.nmls" placeholder="filter" />
+      </div>
+      <div class="tableRowElement">
+        <input type="text" ng-model="search.manager" placeholder="filter" />
+      </div>
+    </div>
+  </div>
+  <div class="tableBody">
+    <div class="tableBodySection" ng-repeat="branch in openBranches | filter: search | orderBy: activeHeader | orderBy: sortDirection">
+      <div class="tableRow" ng-click="toggleShow(branch)">
+        <div class="tableRowElement">{{branch.name}}</div>
+        <div class="tableRowElement">{{branch.state}}</div>
+        <div class="tableRowElement">{{branch.code}}</div>
+        <div class="tableRowElement">{{branch.nmls}}</div>
+        <div class="tableRowElement">{{branch.manager}}</div>
+      </div>
+      <div class="moreInfo" ng-show="branch.hide"></div>
+    </div>
+  </div>
 </div>

@@ -9,4 +9,8 @@ angular.module('branchApp').controller('branchCtl', function($scope, $stateParam
 
   $scope.getBranchInfo($stateParams.id);
 
+  $scope.toggleShow = function(branchInfo) {
+    branchInfo.hide = !branchInfo.hide;
+  };
+
 });

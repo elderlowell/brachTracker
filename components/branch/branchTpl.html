@@ -1,5 +1,13 @@
-<div class="">
+<div class="mainInfo">
   <button ui-sref="branches" class="back">Back</button>
+  <p>Branch Name: {{branchInfo.name}}</p>
+  <p>Branch Code: {{branchInfo.code}}</p>
+  <p>Branch NMLS ID: {{branchInfo.nmls}}</p>
+  <p>Branch State: {{branchInfo.state}}</p>
+  <p>Branch Manager: {{branchInfo.manager}}</p>
+  <button ng-click="toggleShow(branchInfo)" class="">More Info</button>
+</div>
+<div class="moreInfo" ng-show="branchInfo.hide">
   <p>Branch Name: {{branchInfo.name}}</p>
   <p>Branch Code: {{branchInfo.code}}</p>
   <p>Branch NMLS ID: {{branchInfo.nmls}}</p>
