@@ -1,0 +1,65 @@
+<div class="table">
+  <div class="tableHeader">
+    <div class="tableRow">
+      <div class="tableRowElement" ng-click="sortOrder('name')">Branch Name
+        <span ng-if="activeHeader === 'name'">
+          <span ng-if="sortDirection === '+'"><i class="material-icons">arrow_drop_up</i></span>
+          <span ng-if="sortDirection === '-'"><i class="material-icons">arrow_drop_down</i></span>
+        </span>
+      </div>
+      <div class="tableRowElement" ng-click="sortOrder('state')">State
+        <span ng-if="activeHeader === 'state'">
+          <span ng-if="sortDirection === '+'"><i class="material-icons">arrow_drop_up</i></span>
+          <span ng-if="sortDirection === '-'"><i class="material-icons">arrow_drop_down</i></span>
+        </span>
+      </div>
+      <div class="tableRowElement" ng-click="sortOrder('code')">Branch Code
+        <span ng-if="activeHeader === 'code'">
+          <span ng-if="sortDirection === '+'"><i class="material-icons">arrow_drop_up</i></span>
+          <span ng-if="sortDirection === '-'"><i class="material-icons">arrow_drop_down</i></span>
+        </span>
+      </div>
+      <div class="tableRowElement" ng-click="sortOrder('nmls')">NMLS ID
+        <span ng-if="activeHeader === 'nmls'">
+          <span ng-if="sortDirection === '+'"><i class="material-icons">arrow_drop_up</i></span>
+          <span ng-if="sortDirection === '-'"><i class="material-icons">arrow_drop_down</i></span>
+        </span>
+      </div>
+      <div class="tableRowElement" ng-click="sortOrder('closeDateLicensing')">Closed Date
+        <span ng-if="activeHeader === 'closeDateLicensing'">
+          <span ng-if="sortDirection === '+'"><i class="material-icons">arrow_drop_up</i></span>
+          <span ng-if="sortDirection === '-'"><i class="material-icons">arrow_drop_down</i></span>
+        </span>
+      </div>
+    </div>
+    <div class="tableRow">
+      <div class="tableRowElement">
+          <input type="text" ng-model="search.name" placeholder="filter" />
+      </div>
+      <div class="tableRowElement">
+        <input type="text" ng-model="search.state" placeholder="filter" />
+      </div>
+      <div class="tableRowElement">
+        <input type="text" ng-model="search.code" placeholder="filter" />
+      </div>
+      <div class="tableRowElement">
+        <input type="text" ng-model="search.nmls" placeholder="filter" />
+      </div>
+      <div class="tableRowElement">
+        <input type="text" ng-model="search.closeDateLicensing" placeholder="filter" />
+      </div>
+    </div>
+  </div>
+  <div class="tableBody">
+    <div class="tableBodySection" ng-repeat="branch in closedBranches | filter: search | orderBy: activeHeader | orderBy: sortDirection">
+      <div class="tableRow" ng-click="toggleShow(branch)">
+        <div class="tableRowElement">{{branch.name}}</div>
+        <div class="tableRowElement">{{branch.state}}</div>
+        <div class="tableRowElement">{{branch.code}}</div>
+        <div class="tableRowElement">{{branch.nmls}}</div>
+        <div class="tableRowElement">{{branch.closeDateLicensing | date: 'shortDate'}}</div>
+      </div>
+      <div class="moreInfo" ng-show="branch.hide"></div>
+    </div>
+  </div>
+</div>

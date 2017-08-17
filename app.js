@@ -15,6 +15,11 @@ angular
         templateUrl: 'components/branches/branchesTpl.html',
         controller: 'branchesCtl'
       })
+      .state('closedBranches', {
+        url: '/closed_branches',
+        templateUrl: 'components/branches/closedBranchesTpl.html',
+        controller: 'branchesCtl'
+      })
       .state('branch', {
         url: '/branch/:id',
         templateUrl: 'components/branch/branchTpl.html',

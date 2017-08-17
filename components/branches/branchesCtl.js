@@ -1,6 +1,6 @@
-angular.module('branchApp').controller('branchesCtl', function($scope, branchesSvc) {
+angular.module('branchApp').controller('branchesCtl', function($scope, $state, branchesSvc) {
 
-  $scope.getBranchList = function() {
+  $scope.getOpenBranchList = function() {
     branchesSvc.getBranchList()
       .then(function(res) {
         $scope.activeHeader = 'name';
@@ -11,7 +11,24 @@ angular.module('branchApp').controller('branchesCtl', function($scope, branchesS
       });
   };
 
-  $scope.getBranchList();
+  $scope.getClosedBranchList = function() {
+    branchesSvc.getBranchList()
+      .then(function(res) {
+        $scope.activeHeader = 'name';
+        $scope.sortDirection = '+';
+        var branchCodeList = $scope.findUniqueBranches(res);
+        var lastOfEachBranch = $scope.getLastOfEachBranch(branchCodeList, res);
+        $scope.closedBranches = $scope.getClosedBranches(lastOfEachBranch);
+      });
+  };
+
+  if ($state.is('branches')) {
+    $scope.getOpenBranchList();
+  };
+
+  if ($state.is('closedBranches')) {
+    $scope.getClosedBranchList();
+  }
 
 //functions that run inside getBranchList to narrow down all branch changes to find current open branches
   //returns array of all unique branch codes
@@ -48,6 +65,17 @@ angular.module('branchApp').controller('branchesCtl', function($scope, branchesS
     var newArray = [];
     for (i = 0; i < array.length; i++) {
       if (array[i].closeDateLicensing === "") {
+        newArray.push(array[i]);
+      }
+    }
+    return newArray;
+  }
+
+  //returns array of branches where licensing close date != ""
+  $scope.getClosedBranches = function(array) {
+    var newArray = [];
+    for (i = 0; i < array.length; i++) {
+      if (array[i].closeDateLicensing !== "") {
         newArray.push(array[i]);
       }
     }
