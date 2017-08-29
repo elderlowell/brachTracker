@@ -1,11 +1,9 @@
-angular.module('branchApp').controller('branchCtl', function($scope, $stateParams, branchSvc) {
+angular.module('branchApp').controller('branchCtl', function($scope, $stateParams, branchSvc, $filter) {
 
   $scope.getCurrentBranchInfo = function(id) {
     branchSvc.getCurrentBranchInfo(id)
       .then(function(res) {
-        // console.log(res);
         $scope.currentInfo = $scope.getLastOfBranch(res);
-        // console.log($scope.currentInfo);
       });
   }
 

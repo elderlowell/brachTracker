@@ -1,6 +1,5 @@
 <div class="mainInfo">
   <button ui-sref="branches" class="back">Back</button>
-  <button ui-sref="history({id: '{{currentInfo.code}}'})" class="">All Branch Filings</button>
   <div class="infoWrapper">
     <div class="infoSection">
       <div class="infoRow">
@@ -41,19 +40,19 @@
       </div>
       <div class="infoRow">
         <div class="infoRowElement label">Open Date: </div>
-        <div class="infoRowElement"><input type="text" ng-model="currentInfo.openDate | date: 'MM-dd-yyyy'"></div>
+        <div class="infoRowElement"><input type="text" ng-model="currentInfo.openDate"></div>
         <div class="infoRowElement label">Zip Code: </div>
         <div class="infoRowElement"><input type="text" ng-model="currentInfo.zip" /></div>
       </div>
       <div class="infoRow">
         <div class="infoRowElement label">Close Date (onboarding): </div>
-        <div class="infoRowElement"><input type="text" ng-model="currentInfo.closeDateOnboarding | date: 'MM-dd-yyyy'"></div>
+        <div class="infoRowElement"><input type="text" ng-model="currentInfo.closeDateOnboarding"></div>
         <div class="infoRowElement label">Phone No: </div>
         <div class="infoRowElement"><input type="text" ng-model="currentInfo.phone" /></div>
       </div>
       <div class="infoRow">
         <div class="infoRowElement label">Close Date (licensing): </div>
-        <div class="infoRowElement"><input type="text" ng-model="currentInfo.closeDateLicensing | date: 'MM-dd-yyyy'"></div>
+        <div class="infoRowElement"><input type="text" ng-model="currentInfo.closeDateLicensing"></div>
         <div class="infoRowElement label">Fax No: </div>
         <div class="infoRowElement"><input type="text" ng-model="currentInfo.fax" /></div>
       </div>
@@ -114,4 +113,6 @@
       </div>
     </div>
   </div>
+  <br>
+  <button ui-sref="history({id: '{{currentInfo.code}}'})" class="">All Branch Filings</button>
 </div>
