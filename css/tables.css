@@ -28,6 +28,7 @@
   display: flex;
   flex: .2;
   margin: 5px;
+  justify-content: flex-start;
 }
 
 .tableHeader .tableRowElement {
@@ -47,7 +48,6 @@
 .tableBody .tableRowElement {
   overflow: hidden;
   padding-left: 8px;
-  text-align: center;
 }
 
 .tableBody .tableRow:hover {
@@ -75,4 +75,24 @@ i {
   height: 0;
   opacity: 0;
   /*transition: all 1s;*/
+}
+
+.bb {
+  border-bottom: solid 1px gray;
+}
+
+.one {
+  flex: 1;
+}
+
+.two {
+  flex: 2;
+}
+
+.three {
+  flex: 3;
+}
+
+.center {
+  justify-content: center;
 }
