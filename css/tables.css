@@ -3,8 +3,8 @@
 }
 
 .tableHeader {
-  position: fixed;
-  top: 60px;
+  /*position: relative;*/
+  /*top: 60px;*/
   z-index: 2;
   background: white;
   width: 80vw;
@@ -13,13 +13,15 @@
 
 
 .tableBody {
-  position: relative;
-  top: 75px;
+  /*position: relative;*/
+  /*top: 75px;*/
 }
 
 .tableRow {
   display: flex;
   width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .tableRowElement {
@@ -45,6 +47,7 @@
 .tableBody .tableRowElement {
   overflow: hidden;
   padding-left: 8px;
+  text-align: center;
 }
 
 .tableBody .tableRow:hover {

@@ -1,13 +1,15 @@
 angular.module('branchApp').service('branchSvc', function($http) {
 
-  this.getBranchInfo = function(id) {
+  this.getCurrentBranchInfo = function(id) {
     return $http.get('branch-changes.json')
       .then(function(response) {
+        var allEntries = [];
         for (i =0; i < response.data.length; i++) {
           if (response.data[i].code === parseInt(id)) {
-            return response.data[i];
+            allEntries.push(response.data[i]);
           }
         }
+        return allEntries;
       }).catch(function(err) {
         console.log(err);
       });

@@ -1,16 +1,117 @@
 <div class="mainInfo">
   <button ui-sref="branches" class="back">Back</button>
-  <p>Branch Name: {{branchInfo.name}}</p>
-  <p>Branch Code: {{branchInfo.code}}</p>
-  <p>Branch NMLS ID: {{branchInfo.nmls}}</p>
-  <p>Branch State: {{branchInfo.state}}</p>
-  <p>Branch Manager: {{branchInfo.manager}}</p>
-  <button ng-click="toggleShow(branchInfo)" class="">More Info</button>
+  <button ui-sref="history({id: '{{currentInfo.code}}'})" class="">All Branch Filings</button>
+  <div class="infoWrapper">
+    <div class="infoSection">
+      <div class="infoRow">
+        <div class="infoRowElement label">Branch Name: </div>
+        <div class="infoRowElement"><input type="text" ng-model="currentInfo.name"/></div>
+        <div class="infoRowElement label">Branch Manager: </div>
+        <div class="infoRowElement"><input type="text" ng-model="currentInfo.manager"/></div>
+      </div>
+      <div class="infoRow">
+        <div class="infoRowElement label">Branch Code: </div>
+        <div class="infoRowElement"><input type="text" ng-model="currentInfo.code"/></div>
+        <div class="infoRowElement label">License Branch Manager: </div>
+        <div class="infoRowElement"><input type="text" ng-model="currentInfo.licenseManager"/></div>
+      </div>
+      <div class="infoRow">
+        <div class="infoRowElement label">Branch NMLS ID: </div>
+        <div class="infoRowElement"><input type="text" ng-model="currentInfo.nmls"/></div>
+        <div class="infoRowElement label">Street Address: </div>
+        <div class="infoRowElement"><input type="text" ng-model="currentInfo.address"/></div>
+      </div>
+      <div class="infoRow">
+        <div class="infoRowElement label">FHA ID: </div>
+        <div class="infoRowElement"><input type="text" ng-model="currentInfo.fha"/></div>
+        <div class="infoRowElement label">Suite: </div>
+        <div class="infoRowElement"><input type="text" ng-model="currentInfo.suite" /></div>
+      </div>
+      <div class="infoRow">
+        <div class="infoRowElement label">Structure: </div>
+        <div class="infoRowElement"><input type="text" ng-model="currentInfo.structure"></div>
+        <div class="infoRowElement label">City: </div>
+        <div class="infoRowElement"><input type="text" ng-model="currentInfo.city" /></div>
+      </div>
+      <div class="infoRow">
+        <div class="infoRowElement label">Region: </div>
+        <div class="infoRowElement"><input type="text" ng-model="currentInfo.region"></div>
+        <div class="infoRowElement label">State: </div>
+        <div class="infoRowElement"><input type="text" ng-model="currentInfo.state" /></div>
+      </div>
+      <div class="infoRow">
+        <div class="infoRowElement label">Open Date: </div>
+        <div class="infoRowElement"><input type="text" ng-model="currentInfo.openDate | date: 'MM-dd-yyyy'"></div>
+        <div class="infoRowElement label">Zip Code: </div>
+        <div class="infoRowElement"><input type="text" ng-model="currentInfo.zip" /></div>
+      </div>
+      <div class="infoRow">
+        <div class="infoRowElement label">Close Date (onboarding): </div>
+        <div class="infoRowElement"><input type="text" ng-model="currentInfo.closeDateOnboarding | date: 'MM-dd-yyyy'"></div>
+        <div class="infoRowElement label">Phone No: </div>
+        <div class="infoRowElement"><input type="text" ng-model="currentInfo.phone" /></div>
+      </div>
+      <div class="infoRow">
+        <div class="infoRowElement label">Close Date (licensing): </div>
+        <div class="infoRowElement"><input type="text" ng-model="currentInfo.closeDateLicensing | date: 'MM-dd-yyyy'"></div>
+        <div class="infoRowElement label">Fax No: </div>
+        <div class="infoRowElement"><input type="text" ng-model="currentInfo.fax" /></div>
+      </div>
+      <div class="infoRow">
+        <div class="infoRowElement label">Charge Branch: </div>
+        <div class="infoRowElement"><input type="text" ng-model="currentInfo.chargeBranch"></div>
+        <div class="infoRowElement label"> </div>
+        <div class="infoRowElement">
+          <!-- <input type="text" ng-model="currentInfo.fax" /> -->
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="moreInfo" ng-show="branchInfo.hide">
-  <p>Branch Name: {{branchInfo.name}}</p>
-  <p>Branch Code: {{branchInfo.code}}</p>
-  <p>Branch NMLS ID: {{branchInfo.nmls}}</p>
-  <p>Branch State: {{branchInfo.state}}</p>
-  <p>Branch Manager: {{branchInfo.manager}}</p>
+<div class="">
+  <div class="tableHeader">
+    <div class="tableRow">
+      <div class="tableRowElement" ng-click="sortOrder('number')">License Number
+        <span ng-if="activeHeader === 'number'">
+          <span ng-if="sortDirection === '+'"><i class="material-icons">arrow_drop_up</i></span>
+          <span ng-if="sortDirection === '-'"><i class="material-icons">arrow_drop_down</i></span>
+        </span>
+      </div>
+      <div class="tableRowElement" ng-click="sortOrder('regulator')">License Name
+        <span ng-if="activeHeader === 'regulator'">
+          <span ng-if="sortDirection === '+'"><i class="material-icons">arrow_drop_up</i></span>
+          <span ng-if="sortDirection === '-'"><i class="material-icons">arrow_drop_down</i></span>
+        </span>
+      </div>
+      <div class="tableRowElement" ng-click="sortOrder('status')">Status
+        <span ng-if="activeHeader === 'status'">
+          <span ng-if="sortDirection === '+'"><i class="material-icons">arrow_drop_up</i></span>
+          <span ng-if="sortDirection === '-'"><i class="material-icons">arrow_drop_down</i></span>
+        </span>
+      </div>
+      <div class="tableRowElement" ng-click="sortOrder('licenseDate')">License Date
+        <span ng-if="activeHeader === 'licenseDate'">
+          <span ng-if="sortDirection === '+'"><i class="material-icons">arrow_drop_up</i></span>
+          <span ng-if="sortDirection === '-'"><i class="material-icons">arrow_drop_down</i></span>
+        </span>
+      </div>
+      <div class="tableRowElement" ng-click="sortOrder('terminationDate')">License Termination Date
+        <span ng-if="activeHeader === 'terminationDate'">
+          <span ng-if="sortDirection === '+'"><i class="material-icons">arrow_drop_up</i></span>
+          <span ng-if="sortDirection === '-'"><i class="material-icons">arrow_drop_down</i></span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="tableBody">
+    <div class="tableBodySection" ng-repeat="license in currentInfo.licenses | filter: search | orderBy: activeHeader | orderBy: sortDirection">
+      <div class="tableRow">
+        <div class="tableRowElement">{{license.number}}</div>
+        <div class="tableRowElement">{{license.regulator}} {{license.name}}</div>
+        <div class="tableRowElement">{{license.status}}</div>
+        <div class="tableRowElement">{{license.licenseDate | date: 'MM-dd-yyyy'}}</div>
+        <div class="tableRowElement">{{license.terminationDate | date: 'MM-dd-yyyy'}}</div>
+      </div>
+    </div>
+  </div>
 </div>

@@ -1,0 +1,33 @@
+.infoWrapper {
+  margin: 25px;
+  width: 80vw;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.infoRowElement {
+  flex: .25;
+  margin: 5px;
+}
+
+.infoRowElement input {
+  width: 100%;
+  font-size: inherit;
+  color: gray;
+}
+
+.label {
+  text-align: right !important;
+}
